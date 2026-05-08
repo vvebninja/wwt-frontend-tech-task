@@ -8,7 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig(() => ({
 	root: '.',
-
+	base: '/wwt-frontend-tech-task/',
 	server: {
 		port: 3000,
 		host: true,
