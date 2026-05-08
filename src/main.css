@@ -1,2 +1,50 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+
+@theme {
+	--font-inter: 'Inter';
+	--color-white: #ffffff;
+	--color-black-black: #000000;
+	--color-black-grey-200: #b4b4b4;
+	--color-black-grey-300: #7e7e7e;
+	--color-black-grey-500: #31393c;
+
+	--color-button-brand-50: #ffb17a;
+	--color-button-brand-100: #ff9e59;
+	--color-button-brand-200: #ff5f00;
+	--color-button-brand-300: #ff3d00;
+
+	--background-image-divider-gradient: linear-gradient(
+		to top,
+		var(--color-black-grey-300) 1px,
+		transparent 1px
+	);
+	--background-image-double-divider:
+		linear-gradient(
+			to bottom,
+			var(--color-black-grey-300) 1px,
+			transparent 1px
+		),
+		linear-gradient(to top, var(--color-black-grey-300) 1px, transparent 1px);
+}
+
+@utility divider-border {
+	background-image: var(--background-image-divider-gradient);
+	background-size: 100% 1px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+@utility divider-border-double {
+	background-image: var(--background-image-double-divider);
+	background-size:
+		100% 1px,
+		100% 1px;
+	background-position: top, bottom;
+	background-repeat: no-repeat;
+}
+
+body {
+	font-family: var(--font-inter), sans-serif;
+	scrollbar-gutter: stable;
+}
