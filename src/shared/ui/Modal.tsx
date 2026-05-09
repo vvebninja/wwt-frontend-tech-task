@@ -65,7 +65,7 @@ export const ModalBackdrop = ({
 			<div
 				onClick={onClose}
 				className={cn(
-					'fixed inset-0 h-screen z-50 grid place-items-center px-3 transition-all duration-300 ease-in-out',
+					'fixed inset-0 z-50 grid place-items-center px-3 transition-all duration-300 ease-in-out',
 					isAnimateIn
 						? 'bg-black/10 backdrop-blur-sm opacity-100'
 						: 'bg-black/0 backdrop-blur-none opacity-0',
@@ -88,7 +88,7 @@ export const Modal = (props: ModalBase) => {
 			role="dialog"
 			aria-modal="true"
 			className={cn(
-				'relative flex flex-col min-w-[260px] max-h-[90vh] max-w-[1240px] w-full p-5',
+				'relative flex flex-col min-w-[260px] max-h-[95dvh] max-w-[1240px] w-full p-5',
 				'rounded-2xl shadow-xl bg-white transition-all duration-300 ease-in-out',
 				'md:px-6 lg:px-8',
 				isAnimateIn

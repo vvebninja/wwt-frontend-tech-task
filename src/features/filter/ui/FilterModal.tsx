@@ -73,10 +73,9 @@ export const FilterModal = ({ className }: FilterModalProps) => {
 			<ModalBackdrop
 				isOpen={isOpen}
 				onClose={() => setIsOpen(false)}
-				className="lg:items-start pt-10"
 			>
 				<Modal className="w-full">
-					<ModalHeader>
+					<ModalHeader className="lg:pt-2 ">
 						<ModalTitle className="text-[40px]">{t('Filter')}</ModalTitle>
 					</ModalHeader>
 					<ModalContent className="pb-2 overflow-x-hidden">
